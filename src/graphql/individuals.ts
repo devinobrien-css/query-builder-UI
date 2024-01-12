@@ -8,6 +8,12 @@ const GET_INDIVIDUAL = gql`
       firstname
       lastname
       email
+      addresses {
+        line1
+        city
+        state
+        zip
+      }
     }
   }
 `
